@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kanit&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -28,7 +28,7 @@
       <div class="wrapper">
         <nav>
           <div class="logo">
-            <h5>Trabook</h5>
+            <b>Trabook</b>
             <img src="assests/hero section/Vector.png" alt="logo" />
           </div>
           <ul>
@@ -37,71 +37,95 @@
             <li><a href="#">Destination</a></li>
             <li><a href="#">Tour</a></li>
             <li><a href="#">Blog</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Sign up</a></li>
+            <li>
+              <a href="#"><p>Login</p></a>
+            </li>
+            <li><a href="#" class="btn dark">Sign up</a></li>
           </ul>
         </nav>
         <div class="hero-section">
           <div class="left">
             <h3>
-              Get started your <br />
-              exciting <span>journey</span> <br />with us.
+              Get started your exciting <span>journey</span> <br />with us.
             </h3>
             <p>
               A Team of experienced tourism professionals will provide you with
               the best advice and tips for your desire place.
             </p>
-            <a href="#" class="btn discover-icon">Discover Now</a>
+            <a href="#" class="btn light discover-icon">Discover Now</a>
           </div>
           <div class="right">
-            <div>
+            <div class="flight">
+              <img src="assests/hero section/Element.svg" alt="flight vector" />
+            </div>
+
+            <div class="hero">
               <img
                 src="assests/hero section/Group 1000003524.png"
                 alt="travel image"
               />
             </div>
-            <img src="assests/hero section/Element.svg" alt="flight vector" />
           </div>
           <div class="achievement-cards">
-            <div class="award">
-              <img
-                src="assests/hero section/trophy-removebg-preview 1.svg"
-                alt="trophy preview"
-              />
-              <h3>Best Tour Awards</h3>
+            <div class="achievement-cards award">
+              <div class="content">
+                <div>
+                  <img
+                    src="assests/hero section/trophy-removebg-preview 1.svg"
+                    alt="trophy preview"
+                  />
+                </div>
+                <div class="div1"><h3>Best Tour Awards </h3></div>
+              </div>
             </div>
-            <div class="explore">
-              <img
-                src="assests/hero section/google-maps 1.svg"
-                alt="googlemap logo"
-              />
-              <h3>Explore</h3>
-              <p>Every corner of <br />the world with us</p>
+            <div class="achievement-cards explore">
+              <div class="content">
+                <div class="div1">
+                  <img
+                    src="assests/hero section/google-maps 1.svg"
+                    alt="googlemap logo"
+                  />
+                </div>
+                <div class="div2">
+                  <h3>Explore</h3>
+                  <p>Every corner of <br />the world with us</p>
+                </div>
+              </div>
             </div>
-            <div class="ratings">
-              <img src="assests/hero section/star 1.svg" alt="star logo" />
-              <h3>27k</h3>
-              <p>Customer Reviewed</p>
+            <div class="achievement-cards ratings">
+              <div class="content">
+                <div>
+                  <img src="assests/hero section/star 1.svg" alt="star logo" />
+                </div>
+                <div class="div1">
+                  <h3>27k</h3>
+                  <p>Customer Reviewed</p>
+                </div>
+              </div>
             </div>
           </div>
-          <form class="search bar">
-            <div class="location">
-              <label for="location">Location</label>
-              <select name="location" id="location"></select>
-              <p>Where are you going</p>
-            </div>
-            <div class="date">
-              <label for="date">Date</label>
-              <select name="date" id="date"></select>
-              <p>When you will go</p>
-            </div>
-            <div class="guest">
-              <label for="guest">Guest</label>
-              <select name="guest" id="guest"></select>
-              <p>Number of guest</p>
-            </div>
-            <button type="submit" class="btn explore-icon">Explore Now</button>
-          </form>
+  <form class="search-bar">
+    <div class="location">
+      <label for="location">Location</label>
+      <select name="location" id="location"></select>
+      <p>Where are you going</p>
+    </div>
+    <div class="date">
+      <label for="date">Date</label>
+      <select name="date" id="date"></select>
+      <p>When you will go</p>
+    </div>
+    <div class="guest">
+      <label for="guest">Guest</label>
+      <select name="guest" id="guest"></select>
+      <p>Number of guest</p>
+    </div>
+    <div>
+      <button type="submit" class="btn dark explore-icon">
+        Explore Now
+      </button>
+    </div>
+  </form> 
         </div>
       </div>
     </header>
@@ -163,6 +187,7 @@
           <div class="madrid">
             <img src="assests/deals/Image.png" alt="madrid img" />
             <h4>Madrid</h4>
+            <a href="#" class="btn hover-book">Book Now</a>
             <div class="spot-rating">
               <img src="assests/deals/star 1 (1).svg" alt="star" />
               <p>4.8</p>
@@ -177,6 +202,7 @@
           <div class="firence">
             <img src="assests/deals/Image (1).png" alt="frience img" />
             <h4>Firence</h4>
+            <a href="#" class="btn hover-book">Book Now</a>
             <div class="spot-rating">
               <img src="assests/deals/star 1 (1).svg" alt="star" />
               <p>4.5</p>
@@ -191,6 +217,7 @@
           <div class="paris">
             <img src="assests/deals/Image (2).png" alt="paris img" />
             <h4>Paris</h4>
+            <a href="#" class="btn hover-book">Book Now</a>
             <div class="spot-rating">
               <img src="assests/deals/star 1 (1).svg" alt="star" />
               <p>4.4</p>
@@ -205,6 +232,7 @@
           <div class="london">
             <img src="assests/deals/Image (3).png" alt="london img" />
             <h4>London</h4>
+            <a href="#" class="btn hover-book">Book Now</a>
             <div class="spot-rating">
               <img src="assests/deals/star 1 (1).svg" alt="star" />
               <p>4.4</p>
@@ -216,12 +244,12 @@
               <p class="current-price">$850</p>
             </div>
           </div>
-          <div class="btn-arrow">
-            <button class="btn-arrow-left">
-              <img src="assests/deals/Arrow 3 (1).png" alt="left arrow" />
+          <div class="btn arrow">
+            <button class="btn arrow-left">
+              <img src="assests/deals/Arrow 3 (1).svg" alt="left arrow" />
             </button>
-            <button class="btn-arrow-right">
-              <img src="assests/deals/Arrow 3.png" alt="right arrow" />
+            <button class="btn arrow-right">
+              <img src="assests/deals/Arrow 3.svg" alt="right arrow" />
             </button>
           </div>
         </div>
@@ -239,11 +267,11 @@
         <img src="assests/vacation/Element (1).svg" alt="tree logo" />
         <div class="trip-cards">
           <div class="btn-arrow">
-            <button class="btn-arrow-left">
-              <img src="assests/vacation/Arrow 3 (1).png" alt="left arrow" />
+            <button class="btn arrow-left">
+              <img src="assests/vacation/Arrow 3 (1).svg" alt="left arrow" />
             </button>
-            <button class="btn-arrow-right">
-              <img src="assests/vacation/Arrow 3.png" alt="right arrow" />
+            <button class="btn arrow-right">
+              <img src="assests/vacation/Arrow 3.svg" alt="right arrow" />
             </button>
           </div>
           <div class="trip-italy">
@@ -297,11 +325,11 @@
             love them.
           </p>
           <div class="btn-arrow">
-            <button class="btn-arrow-left">
-              <img src="assests/deals/Arrow 3 (1).png" alt="left arrow" />
+            <button class="btn arrow-left">
+              <img src="assests/deals/Arrow 3 (1).svg" alt="left arrow" />
             </button>
-            <button class="btn-arrow-right">
-              <img src="assests/deals/Arrow 3.png" alt="right arrow" />
+            <button class="btn arrow-right">
+              <img src="assests/deals/Arrow 3.svg" alt="right arrow" />
             </button>
           </div>
         </div>
@@ -380,7 +408,7 @@
           <div class="email">
             <img src="assests/footer/Group 46.svg" alt="img" />
             <input type="text" placeholder="Enter your mail" />
-            <button type="submit">Subscribe</button>
+            <button type="submit" class="btn dark subscribe">Subscribe</button>
           </div>
         </form>
         <div class="social">
@@ -401,33 +429,33 @@
           <div class="links">
             <h3>Company</h3>
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Logistic</a></li>
-                <li><a href="#">Privacy & Policy</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Logistic</a></li>
+              <li><a href="#">Privacy & Policy</a></li>
             </ul>
           </div>
           <div class="links">
             <h3>Contact</h3>
             <ul>
-                <li><a href="#">Help/FAQ</a></li>
-                <li><a href="#">Press</a></li>
-                <li><a href="#">Affilates</a></li>
+              <li><a href="#">Help/FAQ</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Affilates</a></li>
             </ul>
           </div>
           <div class="links">
             <h3>More</h3>
             <ul>
-                <li><a href="#">Press Centre</a></li>
-                <li><a href="#">Our blog</a></li>
-                <li><a href="#">Low fare tips</a></li>
+              <li><a href="#">Press Centre</a></li>
+              <li><a href="#">Our blog</a></li>
+              <li><a href="#">Low fare tips</a></li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
   </body>
-  <hr>
+  <hr />
   <footer>
     <p>Copyright, Trabook 2022. All rights reserved.</p>
     <a href="#">Terms & Conditions </a>
