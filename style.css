@@ -16,8 +16,8 @@ body {
 }
 
 .wrapper {
-    max-width: 1440px;
-    margin: 0, auto;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .btn {
@@ -118,7 +118,7 @@ nav{
     width: 100%;
     height: 114px;
     z-index: 100;
-    margin-left: 30px;
+    margin-left: 0px;
     
 }
 nav.logo {
@@ -160,13 +160,12 @@ nav ul li a:last-child{
 }
 
 .hero-section{
-    display:grid ;
-    grid-template-columns: auto auto;
+    display:flex ;
+    align-items: center;
+    justify-content:center;
     height:885;
     width:100%;
     gap: 25px;
-    align-items: center;
-    justify-content:center;
     top: 0;
     margin-top: 16px;
 }
@@ -176,7 +175,6 @@ nav ul li a:last-child{
     height: 568px;
     margin-top: 96px;
     margin-left: 30px;
-    position: relative;
 }
 .hero-section .left h3{
     font-family: "volkhov", sans-serif;
@@ -294,7 +292,8 @@ nav ul li a:last-child{
     background-color: #FFFFFF;
     padding: 20px;
     bottom: -270px;
-    margin-left: 220px; 
+    margin-left: 180px; 
+    transform: translateX(-120px);
     border-radius: 12px;
     box-shadow: 0px 8px 32px rgba(0, 0,0,0.1);
 }
@@ -817,9 +816,14 @@ margin-top: 0;
 }
 /*vacation plan completed*/
 .testimonial-section{
-    width: 1103;
+    width: 100%;
     height: 596px;
     background-color: var(--light-blue-colour);
+    
+}
+.testimonial-section .testimonial-block{
+    width: 100%;
+    height: 596px;
     position: relative;
     margin-top: 0px;
     display: flex;
@@ -827,21 +831,21 @@ margin-top: 0;
     align-items: center;
     z-index: 0;
 }
-.testimonial-section .flight{
+.testimonial-block .flight{
     position: absolute;
     width: 169px;
     height: 188px;
-    margin-left: 1150px;
-    margin-top: -320px;
+    margin-left: 1180px;
+    margin-top: -280px;
 }
-.testimonial-section .content{
+.testimonial-block .about-card{
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
     justify-content: center;
     gap: 60px;
 }
-.testimonial-section .content .testimonial-left{
+.testimonial-block .about-card .testimonial-left{
     width: 394px;
     height: 268px;
     display: grid;
@@ -873,7 +877,7 @@ margin-top: 0;
     gap: 20px;
     margin-top: 10px;
 }
-.testimonial-section .content .testimonial-right{
+.testimonial-section .about-card .testimonial-right{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -904,7 +908,7 @@ margin-top: 0;
     z-index: 11;
 }
 .testimonial-card-1 .content{
-    width: 504px;
+    width: 402px;
     height: 96px;
     margin-top: 31px;
     margin-left: 34px;
@@ -920,7 +924,7 @@ margin-top: 0;
     width: 120px;
     height: 50px;
     margin-left: 34px;
-    margin-top: 54px;
+    margin-top: 34px;
 }
 .testimonial-card-1 .info h3{
     font-size: 18px;
@@ -1047,16 +1051,17 @@ margin-top: 0;
     background-color: #FA7436;
 }
 /*blogs section completed*/
-footer .wrapper{
+.footer-section {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 898px;
-    position: relative;
-    background-color: #FEFCFB;
+    height: 1000px;
+    padding: 0;
+    margin: 0;
+    background-color: var(--light-blue-colour);
 }
-footer .wrapper .subscribe-us{
+.footer-section .subscribe-us{
     width: 1170px ;
     height: 416px;
     position: absolute;
@@ -1066,7 +1071,6 @@ footer .wrapper .subscribe-us{
     justify-content: center;
     border-radius: 16px;
     background-color: #FA7436;
-    margin-top: -485px;
     z-index: 1;
 }
 .subscribe-us .tree{
@@ -1122,14 +1126,13 @@ footer .wrapper .subscribe-us{
     font-size: 16px;
     font-weight: normal;
 }
-.wrapper .footer-links{
+.footer-section .footer-links{
     width: 100%;
     height: 688px;
     bottom: 0;
-    margin-top: 210px;
-    background-color: #F7F8FC;
+    margin-top: 310px;
 }
-.wrapper .quick-links{
+.footer-section .quick-links{
     width: 100%;
     height: 688px;
     display: grid;
@@ -1138,7 +1141,7 @@ footer .wrapper .subscribe-us{
     justify-content: center;
     gap: 100px;
     margin-top: 150px;
-    margin-left: 150px;
+    margin-left: 120px;
     margin-bottom: -130px;
 }
 .quick-links .links-container{
@@ -1237,7 +1240,6 @@ footer .wrapper .subscribe-us{
 .footer-links .copy-right{
     width: 100%;
     height: 160px;
-    background-color: var(--light-blue-colour);
     margin-top: -170px;
     bottom: 0;
 }
@@ -1262,3 +1264,152 @@ footer .wrapper .subscribe-us{
 }
 /*footer part done*/
 
+/*media queries*/
+@media (max-width:1024px) {
+    .wrapper{
+        padding:0 10px
+    }
+    .btn{
+        padding: 16px 32px;
+    }
+    .nav{
+        width: 1024;
+        left: 0;
+        right: 0;
+        padding: 36px 200px;
+    }
+   
+    nav ul li a p{
+        transform: translateX(30px);
+    }
+    nav ul li a:last-child{
+        transform: translateX(70px);
+    }
+    header,
+    .wrapper{
+        height: 1600px;
+        margin: 0;
+    }
+    .hero-section{
+        display: grid;
+        height: 1200px;
+        gap: 0;
+    }
+    .hero-section .left{
+        margin-left: 50px;
+        margin-top: 0;
+        height: 400px;
+    }
+    .hero-section .right{
+        margin-left: 0px;
+        margin-top: 0;
+    }
+     .search-bar{
+        margin-left: 50px;
+        transform: translateY(650px);   
+    }
+     .things-need{
+        padding: 0;
+        width: 100%;
+        height: 1200px;
+    }
+    .things-need .content{
+        height: 200px;
+        align-items: center;
+        justify-content: center;
+        margin-left: -50px;
+    }
+    .things-need .content img{
+        transform: translateX(-80px);
+    }
+    .things-need .access-cards{
+        grid-template-columns: auto;
+    }
+    .deals-discount{
+        width: 100%;
+        height: 1300px;
+    }
+    .deals-discount .place-cards{
+        grid-template-columns: auto auto;
+    }
+    .vacation-plan{
+        width: 100%;
+        height: 1300px;
+    }
+    .vacation-plan .trip-cards{
+        grid-template-columns: auto auto;
+    }
+    .vacation-plan .btn-arrow{
+        align-items: center;
+        margin-left: 400px;
+        transform: translateY(700px);
+    }
+    .testimonial-section {
+        width: 100%;
+        height: 1000px;
+    }
+    .testimonial-section .testimonial-block{
+        width: 100vh;
+        height: 1000px;
+    }
+   .testimonial-block .about-card{
+    grid-template-columns: auto;
+    gap: 250px;
+    margin-left: 200px;
+   }
+   .testimonial-block .flight{
+    margin-left: 900px;
+    margin-top: 0px;
+   }
+   .blog-section{
+    width: 100%;
+    height: 1200px;
+   }
+   .blog-section .blogs{
+    grid-template-columns: auto auto;
+    margin-left: 40px;
+   }
+   .blog-section .slider{
+    transform: translateY(500px);
+   }
+   .footer-section {
+    width: 100%;
+    height: 1000px;
+   }
+   .footer-section .subscribe-us{
+    margin-top: 0px;
+    width: 900px;
+    margin-top: 300px;
+    margin-left: 50px;
+    overflow: hidden;
+   }
+   .footer-section .tree{
+    margin-left: 740px;
+   }
+   .footer-section .email{
+    margin-left: 50px;
+   }
+   .footer-links{
+    margin-top: 0;
+   }
+   .footer-links .quick-links {
+    grid-template-columns: auto auto;
+    margin-left: -50px;
+    margin-top: 600px;
+    gap: 0px;
+   }
+   .quick-links .social{
+    margin-left: 180px;
+   }
+   .quick-links .links-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 20px;
+   }
+   .copy-right .terms{
+    gap: 400px;
+   }
+}
+/*max-width 1024*/
+@media (max-width:768px){
+
+}
