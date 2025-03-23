@@ -905,13 +905,15 @@ margin-top: 0;
     background-color: #FFFFFF;
     box-shadow: 0px 8px 32px rgba(0, 0,0,0.1);
     border-radius: 10px;
+    margin-top: 20px;
     z-index: 11;
 }
 .testimonial-card-1 .content{
     width: 402px;
     height: 96px;
-    margin-top: 31px;
+    margin-top: 36px;
     margin-left: 34px;
+    padding-top: 20px;
 }
 .testimonial-card-1 .content p{
     font-size: 16px;
@@ -924,7 +926,8 @@ margin-top: 0;
     width: 120px;
     height: 50px;
     margin-left: 34px;
-    margin-top: 34px;
+    margin-top: 34;
+    padding-top: 40px;
 }
 .testimonial-card-1 .info h3{
     font-size: 18px;
@@ -961,6 +964,7 @@ margin-top: 0;
     color: #444444;
     text-align: start;
     line-height: 28px;
+    margin-top: -60px;
 }
 .testimonial-card-2 .info {
     width: 140px;
@@ -1411,5 +1415,147 @@ margin-top: 0;
 }
 /*max-width 1024*/
 @media (max-width:768px){
-
+    .wrapper{
+        padding:0 10px
+    }
+    .btn{
+        padding: 4px 8px;
+    }
+    .nav{
+        width: 924;
+        left: 0;
+        right: 0;
+        padding: 36px 0px;
+    }
+    nav ul{
+        margin-left: 0px;
+    }
+    nav ul li a p{
+        transform: translateX(10px);
+    }
+    nav ul li a:last-child{
+        transform: translateX(20px);
+    }
+    header,
+    .wrapper{
+        height: max-content;
+        width: 100;
+        margin: 0;
+    }
+    .hero-section{
+        height: 1100px;
+    }
+    .hero-section .left{
+        width: 100%;
+        height: 350px;
+        margin-top: -250px;
+        padding: 0 10px;
+    }
+    .hero-section .left h3{
+        font-size: 36px;
+        width: 100%;
+        height: 105px;
+    }
+    .hero-section .left p{
+        width: 568px;
+        height: 100px;
+    }
+    .hero-section .left div{
+        margin-top: -50px;
+    }
+    .hero-section .right{
+        width: 100%;
+        margin-top: -600px;
+        margin-left: 0px;
+    }
+    .hero-section .right .flight img{
+        width: 750px;
+        height:150px ;
+    }
+    .hero-section .search-bar{
+        margin-left: 0px;
+        padding: 20px;
+        width: 750px;
+        height: 105px;
+        transform: translateY(300px);
+    }
+    .things-need .content{
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        gap: 5;
+        width: 100%;
+    }
+    .things-need .content h3{
+        margin-left: 0;
+        width: 500px;
+        font-size: 40px;
+        text-align: center;
+        margin-left: 40;
+    }
+    .things-need .content p{
+        margin-left: 0;
+    }
+    .testimonial-section{
+        height: 900px;
+    }
+    .testimonial-block .flight{
+        margin-left: 700px;
+        margin-top: -200px;
+    }
+    .testimonial-block .about-card {
+        margin-top: -200px;
+    }
+    .blog-section{
+        height: 1200px;
+    }
+    .blog-section .content{
+        margin-top: -500px;
+    }
+    .footer-section{
+        height: 1000px;
+    }
+    .footer-section .subscribe-us{
+        margin-top: 50px;
+        width: 700px;
+        height: 316px;
+        margin-left: -25px;
+    }
+    .footer-section .tree{
+        margin-left: 600px;
+    }
+    .subscribe-us .email{
+        margin-left: 20px;
+    }
+    .email h3{
+        width: 500px;
+        height: 100px;
+        font-size: 36px;
+        align-items: center;
+        margin-left: 100px;
+        margin-bottom: 0;
+        margin-top: 30px;
+    }
+    .email .input{
+        margin-top: 10px;
+    }
+    .footer-section .footer-links{
+        margin-top: -200px;
+    }
+    .footer-links .quick-links{
+        grid-template-columns: auto;
+        margin-top: -100;
+    
+    }
+    .quick-links .social{
+        margin-left: 250px;
+    }
+    .quick-links .links-container{
+        margin-top: -100px;
+        margin-left: 100px;
+    }
+    .copy-right .terms{
+        gap: 100px;
+    }
 }
+/*max -width 768 completed*/
