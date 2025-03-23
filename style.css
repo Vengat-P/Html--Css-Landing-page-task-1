@@ -1439,7 +1439,7 @@ margin-top: 0;
     header,
     .wrapper{
         height: max-content;
-        width: 100;
+        width: 100%;
         margin: 0;
     }
     .hero-section{
@@ -1519,7 +1519,7 @@ margin-top: 0;
         margin-top: 50px;
         width: 700px;
         height: 316px;
-        margin-left: -25px;
+        margin-left: 25px;
     }
     .footer-section .tree{
         margin-left: 600px;
@@ -1559,3 +1559,319 @@ margin-top: 0;
     }
 }
 /*max -width 768 completed*/
+@media (max-width:425px){
+    .wrapper{
+        padding:0 10px
+    }
+    .btn{
+        padding: 4px 8px;
+        width: 80px;
+    }
+    .nav{
+        display: grid;
+        grid-template-columns: auto;
+        width:100%;
+        left: 0;
+        right: 0;
+        padding: 1px 0px;
+    }
+    nav .logo{
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    nav ul{
+        gap: 10px;
+        margin-left: -30px;
+    }
+    nav ul li a{
+        font-size: 8px;
+    }
+    nav ul li a p{
+        font-size: 12px;
+        transform: translateX(0px);
+    }
+    nav ul li a:last-child{
+        transform: translateX(0px);
+    }
+    header,
+    .wrapper{
+        height: max-content;
+        width: 100%;
+        margin: 0;
+    }
+    .hero-section{
+        height: 1400px;
+        gap: 0;
+    }
+    .hero-section .left{
+        width: 355px;;
+        height: 350px;
+        margin-top: -350px;
+        margin-left: 0px;
+        padding: 0 10px;    
+    }
+    .hero-section .left h3{
+        font-size: 20px;
+        width: 350px;
+    }
+    .hero-section .left p{
+        width: 355px;
+        height: 120px;
+    }
+    .hero-section .right{
+        width: 355px;
+        margin-top: -650px;
+        height: 650px;
+    }
+    .hero-section .right .flight img{
+        width: 345px;
+        height: 117px;
+    }
+    .hero-section .right .hero img{
+        margin-left: -10px;
+        width: 355px;
+        height: 390px;
+    }
+    .achievement-cards{
+        width: 150px;
+    }
+    .achievement-cards .award{
+        transform: translateY(80px);
+        width: 150px;
+    }
+    .achievement-cards .award .content{
+        transform: translateX(-60px);
+        gap: 0;
+    }
+    .achievement-cards .explore{
+        transform: translateY(50px);
+        width: 150px;
+    }
+    .achievement-cards .explore .content{
+        transform: translateX(-270px);
+        gap: 0;
+    }
+    .achievement-cards .ratings{
+        transform: translateY(20px);
+        width: 150px;
+    }
+    .achievement-cards .ratings .content{
+        transform: translateX(-110px);
+        gap: 0;
+    }
+    .hero-section .search-bar{
+        grid-template-columns: auto;
+        width: 345px;
+        height: 400px;
+        margin-left: 10px;
+        transform: translateY(650px);
+    }
+    .things-need {
+        height: 1300px;
+    }
+    .things-need .content{
+        width: 355px;
+        height: 300px;
+    }
+    .things-need .content div{
+        width: 355px;
+        height: 300px;
+        margin-left: 30px;
+    }
+    .things-need .content img{
+        display: none;
+    }
+    .things-need .content h3{
+        width: 355px;
+        text-align: start;
+
+    }
+    .things-need .content p{
+        width: 355px;
+        text-align: start;
+    }
+    .deals-discount {
+        height: 2400px;
+    }
+    .deals-discount .content{
+        width: 355px;
+    }
+    .deals-discount .content h3{
+        font-size: 32px;
+    }
+    .deals-discount .content p{
+        height: 100px;
+        text-align: start;
+    }
+    .deals-discount .place-cards{
+        grid-template-columns: auto;
+    }
+    .deals-discount .slide-button{
+        width: 355px;
+        height: 100px;
+        transform: translateX(-50px);
+        margin-top: 50px;
+    }
+    .vacation-plan {
+        height: 1800px;
+        width: 100%;
+        margin-top: 0px;
+    }
+    .vacation-plan .content{
+        width: 355px;
+        height: 250px;
+        margin-top: -100px;
+    }
+    .vacation-plan .content img{
+        display: none;
+    }
+    .vacation-plan .content div{
+        width: 355px;
+    }
+    .vacation-plan .content h3{
+        margin-left: 0;
+        font-size: 32px;
+    }
+    .vacation-plan .content p{
+        margin-left: 0;
+        width: 355px;
+        font-size: 16px;
+        padding-left: 20px;
+        text-align: start;
+    }
+    .vacation-plan .btn-arrow{
+      transform: translateX(-200px);
+    }
+    .vacation-plan .trip-cards{
+        grid-template-columns: auto;
+    }
+    .testimonial-section {
+        width: 100%;
+        height: 1000px;
+    }
+    .testimonial-section.testimonial-block{
+        width: 355px;
+    }
+    .testimonial-block .flight{
+        display: none;
+    }
+    .testimonial-block .about-card {
+        width: 355px;
+        height: 1000px;
+        margin-left:0;
+        margin-top: 0;
+        gap: 0;
+    }
+    .about-card h3{
+        width: 355px;
+        margin-left: -20px;
+    }
+    .about-card p{
+        width: 355px;
+        margin-left: -20px;
+    }
+    .about-card .btn-arrow{
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    .testimonial-block .testimonial-left{
+        margin-left: -30px;
+    }
+    .testimonial-block .testimonial-right{
+        width: 345px;
+        margin-left:-200px ;
+    }
+    .testimonial-right .testimonial-cards{
+        width: 305px;
+    }
+    .testimonial-cards .testimonial-card-1{
+        width: 305px;
+    }
+    .testimonial-cards .testimonial-card-2{
+        width: 305px;
+        margin-left: 20px;
+    }
+    .testimonial-cards .testimonial-card-1 .content {
+        width: 255px;
+        height: 100px;
+    }
+    .blog-section{
+        width: 100%;
+        height: 2000px;
+        margin-top: 0;
+    }
+    .blog-section .content{
+        width: 365px;
+        height: 1900px;
+        margin-top: 0;
+    }
+    .blog-section .content h2{
+        width: 355px;
+        height: 108px;
+        font-size: 36px;
+    }
+    .blog-section .content .blogs{
+        grid-template-columns: auto;
+    }
+    .blog-section .content .slider{
+        display: none;
+    }
+    .footer-section{
+        width: auto;
+        height: 1600px;
+    }
+    .footer-section .subscribe-us{
+        width: 355px;
+        margin-top: -350px;
+        margin-left: 5px;
+    }
+    .footer-section .tree{
+        margin-left: 250px;
+    }
+    .footer-section .design{
+        margin-left: -50px;
+        margin-top: -190px;
+        height: 200px;
+    }
+    .subscribe-us .email{
+        width: 355px;
+        height: 320px;
+        margin-left: 0;
+    }
+    .email h3{
+        margin-left: 0;
+        font-size: 20px;
+        width: 300px;
+    }
+    .email .input{
+        width: 330px;
+        gap: 0;
+    }
+    .footer-section .footer-links{
+        width: 355px;
+        height: 700px;
+        margin-top: 0px;
+        margin-left: -30px;
+    }
+    .footer-links .quick-links{
+        height: 700px;
+        margin-top: 200px;
+    }
+    .footer-links .links-container{
+        grid-template-columns: auto;
+        width: 350px;
+        height: 700px;
+        margin-top: 150px;
+        margin-left: 300px;
+    }
+    .footer-links .copy-right{
+        margin-top: 200px;
+        margin-left: 60px;
+    }
+    .copy-right .terms{
+        display: grid;
+        grid-template-columns: auto;
+        width: 360px;
+    }
+}
+/*mobile large & mediaum device media queries done*/
