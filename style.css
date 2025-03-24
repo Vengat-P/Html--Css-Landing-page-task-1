@@ -167,6 +167,7 @@ nav ul li a:last-child{
     width:100%;
     gap: 25px;
     top: 0;
+    position: relative;
     margin-top: 16px;
 }
 .hero-section .left{
@@ -292,8 +293,8 @@ nav ul li a:last-child{
     background-color: #FFFFFF;
     padding: 20px;
     bottom: -270px;
-    margin-left: 180px; 
-    transform: translateX(-120px);
+    margin-left: 40px; 
+    transform: translateY(-200px);
     border-radius: 12px;
     box-shadow: 0px 8px 32px rgba(0, 0,0,0.1);
 }
@@ -1291,26 +1292,26 @@ margin-top: 0;
     }
     header,
     .wrapper{
-        height: 1600px;
+        height: auto;
         margin: 0;
     }
     .hero-section{
         display: grid;
-        height: 1200px;
+        height: 1400px;
         gap: 0;
     }
     .hero-section .left{
         margin-left: 50px;
-        margin-top: 0;
+        margin-top: -300px;
         height: 400px;
     }
     .hero-section .right{
         margin-left: 0px;
-        margin-top: 0;
+        margin-top: -600px;
     }
      .search-bar{
         margin-left: 50px;
-        transform: translateY(650px);   
+        transform: translateY(-400px);   
     }
      .things-need{
         padding: 0;
@@ -1369,6 +1370,9 @@ margin-top: 0;
     width: 100%;
     height: 1200px;
    }
+   .blog-section .content{
+    margin-top: -500px;
+   }
    .blog-section .blogs{
     grid-template-columns: auto auto;
     margin-left: 40px;
@@ -1381,9 +1385,8 @@ margin-top: 0;
     height: 1000px;
    }
    .footer-section .subscribe-us{
-    margin-top: 0px;
     width: 900px;
-    margin-top: 300px;
+    margin-top:100px;
     margin-left: 50px;
     overflow: hidden;
    }
@@ -1399,7 +1402,7 @@ margin-top: 0;
    .footer-links .quick-links {
     grid-template-columns: auto auto;
     margin-left: -50px;
-    margin-top: 600px;
+    margin-top: 400px;
     gap: 0px;
    }
    .quick-links .social{
@@ -1477,7 +1480,7 @@ margin-top: 0;
         padding: 20px;
         width: 750px;
         height: 105px;
-        transform: translateY(300px);
+        transform: translateY(-400px);
     }
     .things-need .content{
         margin-left: 0;
@@ -1664,7 +1667,7 @@ margin-top: 0;
         width: 345px;
         height: 400px;
         margin-left: 10px;
-        transform: translateY(650px);
+        transform: translateY(-350px);
     }
     .things-need {
         height: 1300px;
@@ -1875,3 +1878,405 @@ margin-top: 0;
     }
 }
 /*mobile large & mediaum device media queries done*/
+@media(min-width:1441px){
+    header,
+    .wrapper{
+    width: 2560px;
+    height: auto;
+}
+.btn{
+    padding: 16px 64px;
+}
+
+.nav{
+    width: auto;
+    height: 150px;
+    left: 0;
+    right: 0;
+}
+nav .logo {
+    font-size: 48px;
+    width: 500px;
+    height: 30px;
+    margin-right: 50px;
+}
+nav .logo img{
+    width: 50px;
+}
+nav ul{
+    margin-left: 200px;
+}
+nav ul li a{
+    font-size: 32px;
+}
+nav ul li a p{
+    font-size: 48px;
+    transform: translateX(100px);
+}
+nav ul li a:last-child{
+    font-size: 48px;
+    width: 350px;
+    transform: translateX(200px);
+}
+.hero-section{
+    height: 1200px;
+    gap: 200px;
+}
+.hero-section .left{
+    margin-left: 50px;
+    margin-top: 0;
+    width: 1000px;
+    height: 700px;
+}
+.hero-section .left h3{
+    font-size: 70px;
+    width: 700px;
+    height: 240px;
+}
+.hero-section .left p{
+    font-size: 36px;
+    width: 700px;
+    height: 240px;
+}
+.hero-section .left .btn.light{
+    width: 300px;
+    height: 100px;
+    font-size: 36px;
+    text-align: center;
+    padding: 30px 0px;
+}
+.hero-section .right{
+    width: 965px;
+    height: 767px;
+    margin-left: 0px;
+    margin-top: 0;
+}
+.hero-section .right .flight{
+    width: 945px;
+    margin-top: -200px;
+}
+.hero-section .right .flight img{
+    width:1205px;
+    height: 500px;
+}
+.hero-section .right .hero{
+    width: 945px;
+    margin-top: -200px;
+}
+.hero-section .right .hero img{
+    width: 700px;
+    height: 730px;
+}
+.achievement-cards{
+    position: absolute;
+    min-width: auto;
+    color: #444444;
+}
+
+.achievement-cards .content{
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    z-index: 10;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 375px;
+    height: 120px;
+    gap: 15px;
+    box-shadow:  0px 9px 32px rgba(0,0,0,0.2)
+}
+.achievement-cards .award{
+    left: -130px;
+    bottom: -220px;
+    width: 150px;
+}
+.achievement-cards .explore{
+    left: 539px;
+    top: 220px;
+    width: 273;
+}
+.achievement-cards .ratings{
+    left:-50px;
+    top: 415px;
+}
+.achievement-cards h3{
+    font-weight: 600;
+    font-size: 32px;
+    margin-top: 32px;
+    margin-bottom: 0;
+    width: 175px;
+    text-align: start;
+    margin: 0;
+}
+.achievement-cards img{
+    flex-basis: 16px;
+    flex: 1;
+    width: 64px;
+    height: 64px;
+    align-items: center;
+}
+.achievement-cards p{
+    font-weight: normal;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 12px;
+    text-align: start;
+}
+ .search-bar{
+    margin-left: 50px;
+    width: 1200px;
+    height: 157px;
+    transform: translateY(-300px);   
+}
+.search-bar .location label {
+    font-size: 24px;
+    color: #222222;
+    font-weight: 500 ;
+
+}
+.search-bar .location p {
+    font-size: 20px;
+    color: #666666;
+    font-weight: 400;
+    width: 250px;
+
+}
+.search-bar .date label {
+    font-size: 24px;
+    color: #222222;
+    font-weight: 500 ;
+
+}
+
+.search-bar .date p {
+    font-size: 20px;
+    color: #666666;
+    font-weight: 400;
+    width: 250px;
+
+}
+.search-bar .guest label {
+    font-size: 24px;
+    color: #222222;
+    font-weight: 500 ;
+
+}
+
+.search-bar .guest p {
+    font-size: 20px;
+    color: #666666;
+    font-weight: 400;
+    width: 250px;
+
+}
+.search-bar .btn.dark.explore-icon{
+    width: 250px;
+    height: 100px;
+    font-size: 32px;
+}
+.things-need{
+    height:1000px ;
+}
+.things-need .content {
+    width: 100%;
+}
+.things-need .content div{
+    width: 800px;
+    height: 176px;
+}
+.things-need .content div h3{
+  height: 74px;
+  font-size: 64px;
+}
+.things-need .content div p{
+    width: 700px;
+    height: 74px;
+    font-size: 32px;
+  }
+  .things-need .content img {
+    width: 400px;
+    height: 200px;
+}
+.things-need .access-cards{
+    width: auto;
+    height: 328px;
+    gap: 200px;
+    margin-top: 100px;
+}
+.access-cards .signup {
+    width: 470px;
+    height: 328px;
+}.access-cards .money {
+    width: 470px;
+    height: 328px;
+}
+.access-cards .travel {
+    width: 470px;
+    height: 328px;
+}
+.access-cards .signup.bg{
+    width: 470px;
+    height: 328px;
+}
+.access-cards .signup a{
+    font-size: 48px;
+}
+.access-cards .signup p{
+    font-size: 24px;
+
+}.access-cards .money.bg{
+    width: 470px;
+    height: 328px;
+}
+.access-cards .money a{
+    font-size: 48px;
+}
+.access-cards .money p{
+    font-size: 24px;
+
+}
+.access-cards .travel.bg{
+    width: 470px;
+    height: 328px;
+}
+.access-cards .travel a{
+    font-size: 48px;
+}
+.access-cards .travel p{
+    font-size: 24px;
+}
+.deals-discount{
+    height: 1000px;
+}
+.deals-discount .content{
+    height: 302px;
+}
+.deals-discount .content h3{
+    font-size: 64px;
+}
+.deals-discount .content p{
+    font-size: 32px;
+}
+.deals-discount .place-cards{
+    gap: 100px;
+}
+.vacation-plan{
+    height: 1000px;
+}
+.vacation-plan .content{
+    height: 200px;
+}
+.vacation-plan .content h3{
+    font-size: 64px;
+    margin-bottom: 50px;
+}
+.vacation-plan .content p{
+    font-size: 32px;
+    width: 800px;
+}
+.vacation-plan .content img{
+    height: 150px;
+    width: 305px;
+}
+.vacation-plan .trip-cards{
+    gap: 100px;
+}
+.testimonial-section {
+    height: 1000px;
+}
+.testimonial-section .testimonial-block{
+    height: 800px;
+}
+.testimonial-block .flight{
+    width: 269px;
+    height: 288px;
+    margin-left: 1700px;
+}
+.testimonial-block .flight img{
+    width: 269px;
+    height: 288px;
+}
+.testimonial-block .about-card {
+    height: 800px;
+    width: 1400px;
+    gap: 200px;
+}
+.testimonial-block .about-card .testimonial-left {
+    width: 600px;
+    height: 368px;
+}
+.testimonial-left h3{
+    width: 600px;
+    font-size: 60px;
+    height: 150px;
+    line-height: 80px;
+}
+.testimonial-left p{
+    width: 600px;
+    font-size: 32px;
+    height: 150px;
+}
+.testimonial-block .about-card .testimonial-right {
+    width: 600px;
+    height: 668px;
+}
+.testimonial-right .testimonial-cards{
+    width: 605px;
+}
+.testimonial-cards .testimonial-card-1{
+    width: 605px;
+}
+.testimonial-cards .testimonial-card-2{
+    width: 605px;
+    margin-left: 50px;
+}
+.testimonial-cards .testimonial-card-1 .content {
+    width: 555px;
+    height: 100px;
+    font-size: 24px;
+}
+.testimonial-cards .info {
+    width: 600px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.testimonial-cards .info h3{
+    font-size: 32px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.testimonial-cards .info p{
+    font-size: 24px;
+    margin-top: -40px;
+    margin-left: 20px;
+}
+.blog-section{
+    height: 1000px;
+}
+.blog-section .content{
+    height: 800px;
+}
+.blog-section .content h2{
+    width: 1000px;
+    font-size: 64px;
+}
+.blog-section .blogs{
+    gap: 100px;
+    margin-top: 150px;
+}
+.blog-section .content .slider{
+    width: 134px;
+    height: 54px;
+    margin-left: 350px;
+}
+.slider .elipse1{
+    width: 30px;
+    height: 30px;
+}
+.slider .elipse2{
+    width: 50px;
+    height: 50px;
+}
+}
