@@ -836,7 +836,7 @@ margin-top: 0;
     position: absolute;
     width: 169px;
     height: 188px;
-    margin-left: 1180px;
+    margin-left: 1080px;
     margin-top: -280px;
 }
 .testimonial-block .about-card{
@@ -1270,7 +1270,7 @@ margin-top: 0;
 /*footer part done*/
 
 /*media queries*/
-@media (max-width:1024px) {
+@media (max-width:1200px) {
     .wrapper{
         padding:0 10px
     }
@@ -1880,6 +1880,7 @@ margin-top: 0;
     }
 }
 /*mobile large & mediaum device media queries done*/
+/*
 @media(min-width:1441px){
     header,
     .wrapper{
