@@ -1519,7 +1519,7 @@ margin-top: 0;
         height: 1000px;
     }
     .footer-section .subscribe-us{
-        margin-top: 50px;
+        margin-top: -50px;
         width: 700px;
         height: 316px;
         margin-left: 25px;
@@ -1547,10 +1547,11 @@ margin-top: 0;
     }
     .footer-links .quick-links{
         grid-template-columns: auto;
-        margin-top: -100;
+        margin-top: 100;
     
     }
     .quick-links .social{
+        margin-top: -80px;
         margin-left: 250px;
     }
     .quick-links .links-container{
@@ -1558,6 +1559,7 @@ margin-top: 0;
         margin-left: 100px;
     }
     .copy-right .terms{
+        margin-top: 30px;
         gap: 100px;
     }
 }
@@ -1825,7 +1827,7 @@ margin-top: 0;
     }
     .footer-section .subscribe-us{
         width: 355px;
-        margin-top: -350px;
+        margin-top: -470px;
         margin-left: 5px;
     }
     .footer-section .tree{
@@ -1853,23 +1855,23 @@ margin-top: 0;
     .footer-section .footer-links{
         width: 355px;
         height: 700px;
-        margin-top: 0px;
+        margin-top: -40px;
         margin-left: -30px;
     }
     .footer-links .quick-links{
         height: 700px;
-        margin-top: 200px;
+        margin-top: -50px;
     }
     .footer-links .links-container{
         grid-template-columns: auto;
         width: 350px;
-        height: 700px;
-        margin-top: 150px;
+        height: 650px;
+        margin-top: 100px;
         margin-left: 300px;
     }
     .footer-links .copy-right{
         margin-top: 200px;
-        margin-left: 60px;
+        margin-left: 50px;
     }
     .copy-right .terms{
         display: grid;
