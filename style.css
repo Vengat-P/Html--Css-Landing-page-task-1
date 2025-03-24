@@ -1288,7 +1288,7 @@ margin-top: 0;
         transform: translateX(30px);
     }
     nav ul li a:last-child{
-        transform: translateX(70px);
+        transform: translateX(50px);
     }
     header,
     .wrapper{
@@ -1413,7 +1413,7 @@ margin-top: 0;
     margin-left: 20px;
    }
    .copy-right .terms{
-    gap: 400px;
+    gap: 300px;
    }
 }
 /*max-width 1024*/
