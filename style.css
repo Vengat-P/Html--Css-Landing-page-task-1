@@ -882,7 +882,7 @@ margin-top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 541px;
+    width: auto;
     height: 279px;
     margin-top: -150px;
 }
@@ -1067,7 +1067,7 @@ margin-top: 0;
     background-color: var(--light-blue-colour);
 }
 .footer-section .subscribe-us{
-    width: 1170px ;
+    width: 1000px ;
     height: 416px;
     position: absolute;
     display: grid;
@@ -1075,12 +1075,13 @@ margin-top: 0;
     align-items: center;
     justify-content: center;
     border-radius: 16px;
+    overflow: hidden;
     background-color: #FA7436;
     z-index: 1;
 }
 .subscribe-us .tree{
     position: absolute;
-    margin-left: 890px;
+    margin-left: 790px;
     margin-top: -20px;
     z-index: 2;
 }
@@ -1240,10 +1241,6 @@ margin-top: 0;
 }
 .footer-links .copy-right{
     width: 100%;
-    margin-top: -300px;
-}
-.footer-links .copy-right{
-    width: 100%;
     height: 160px;
     margin-top: -170px;
     bottom: 0;
@@ -1252,8 +1249,8 @@ margin-top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 650px;
-    margin-left: -20px;
+    gap: 350px;
+    margin-left: 20px;
 }
 .terms p{
         font-size: 16px;
@@ -1428,16 +1425,16 @@ margin-top: 0;
         width: 924;
         left: 0;
         right: 0;
-        padding: 36px 0px;
+        padding: 18px 0px;
     }
     nav ul{
-        margin-left: 0px;
+        margin-left: -20px;
     }
     nav ul li a p{
-        transform: translateX(10px);
+        transform: translateX(0px);
     }
     nav ul li a:last-child{
-        transform: translateX(20px);
+        transform: translateX(0px);
     }
     header,
     .wrapper{
@@ -1476,9 +1473,9 @@ margin-top: 0;
         height:150px ;
     }
     .hero-section .search-bar{
-        margin-left: 0px;
+        margin-left: 10px;
         padding: 20px;
-        width: 750px;
+        width: 720px;
         height: 105px;
         transform: translateY(-400px);
     }
@@ -1498,6 +1495,15 @@ margin-top: 0;
     }
     .things-need .content p{
         margin-left: 0;
+    }
+    .vacation-plan{
+        height: 100%;
+    }
+    .vacation-plan .btn-arrow{
+        transform: translateY(0px);
+    }
+    .vacation-plan .trip-cards{
+        grid-template-columns: auto;
     }
     .testimonial-section{
         height: 900px;
@@ -1520,7 +1526,7 @@ margin-top: 0;
     }
     .footer-section .subscribe-us{
         margin-top: -50px;
-        width: 700px;
+        width:700px;
         height: 316px;
         margin-left: 25px;
     }
@@ -1603,6 +1609,7 @@ margin-top: 0;
         height: max-content;
         width: 100%;
         margin: 0;
+        
     }
     .hero-section{
         height: 1400px;
@@ -1677,14 +1684,17 @@ margin-top: 0;
     .things-need .content{
         width: 355px;
         height: 300px;
+        display: grid;
+        grid-template-columns: auto;
     }
     .things-need .content div{
         width: 355px;
         height: 300px;
-        margin-left: 30px;
+        margin-left: 60px;
     }
     .things-need .content img{
-        display: none;
+        margin-top: -150px;
+        margin-left: 150px;
     }
     .things-need .content h3{
         width: 355px;
@@ -1725,10 +1735,11 @@ margin-top: 0;
     .vacation-plan .content{
         width: 355px;
         height: 250px;
+        display: grid;
         margin-top: -100px;
     }
     .vacation-plan .content img{
-        display: none;
+        margin-left: 100px;
     }
     .vacation-plan .content div{
         width: 355px;
@@ -1745,20 +1756,21 @@ margin-top: 0;
         text-align: start;
     }
     .vacation-plan .btn-arrow{
+        margin-top: 50px;
       transform: translateX(-200px);
     }
     .vacation-plan .trip-cards{
-        grid-template-columns: auto;
+        grid-template-columns: ;
     }
     .testimonial-section {
         width: 100%;
         height: 1000px;
     }
-    .testimonial-section.testimonial-block{
-        width: 355px;
+    .testimonial-section .testimonial-block{
+        width: 390px;
     }
     .testimonial-block .flight{
-        display: none;
+        margin-left: 0;
     }
     .testimonial-block .about-card {
         width: 355px;
@@ -1776,18 +1788,20 @@ margin-top: 0;
         margin-left: -20px;
     }
     .about-card .btn-arrow{
-        margin-top: 50px;
+        margin-top: 150px;
         margin-left: 50px;
     }
     .testimonial-block .testimonial-left{
-        margin-left: -30px;
+        margin-left: 40px;
     }
-    .testimonial-block .testimonial-right{
-        width: 345px;
-        margin-left:-200px ;
+     .testimonial-section .about-card .testimonial-right{
+        width: 390px;
+        height: 300px;
+        margin-left:-20px ;
     }
     .testimonial-right .testimonial-cards{
         width: 305px;
+        height: 300px;
     }
     .testimonial-cards .testimonial-card-1{
         width: 305px;
@@ -1876,7 +1890,8 @@ margin-top: 0;
     .copy-right .terms{
         display: grid;
         grid-template-columns: auto;
-        width: 360px;
+        width: 350px;
+        margin-left: 0px;
     }
 }
 /*mobile large & mediaum device media queries done*/
